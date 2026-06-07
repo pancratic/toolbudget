@@ -1,0 +1,1 @@
+{ "tools": [ { "name": "search_web", "description": "Search the public web for a query and return ranked snippets for the user.", "inputSchema": { "type": "object", "properties": { "query": { "type": "string", "description": "The query." } }, "required": ["query"] } } ] }

@@ -1,0 +1,6 @@
+{ "tools": [
+  { "name": "a", "inputSchema": { "type": "object", "properties": { "x": { "type": "string" } } } },
+  { "name": "b", "description": "short" },
+  { "name": "search_web", "description": "Search the web for a query" },
+  { "name": "web_search", "description": "Search the web for a query" }
+] }
