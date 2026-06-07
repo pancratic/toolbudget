@@ -114,12 +114,12 @@ reference server (`--format markdown`):
 | `tool/missing-description` | A tool with no description — agents can't choose what they can't read. |
 | `tool/description-too-short` | Description too terse to convey purpose and when to use it. |
 | `tool/description-too-long` | Bloated description burning tokens on every call. |
-| `tool/unclear-name` | Non-descriptive name (e.g. `a`, `do_thing`); rename to `verb_object`. |
+| `tool/unclear-name` | Non-descriptive name (e.g. `a`, `do`, `tool1`); rename to `verb_object`. |
 | `tool/param-missing-description` | Parameters with no description. |
 | `tool/schema-too-large` | A single tool's input schema is oversized. |
 | `tool/schema-deeply-nested` | Schema nests deeper than is reliable for models to fill. |
 | `tool/freeform-should-enum` | Free-text param that should be a constrained enum. |
-| `tool/no-examples` | No usage examples to anchor correct calls. |
+| `tool/no-examples` | Oversized description (≥120 words) with no usage example to anchor correct calls. |
 | `redundancy/near-duplicate-tools` | Two tools that look near-identical; merge to cut surface and ambiguity. |
 
 ## Free vs Pro
@@ -129,7 +129,7 @@ reference server (`--format markdown`):
 | Full audit + token metric + 0–100 score | ✓ | ✓ |
 | All reporters (pretty / json / markdown) | ✓ | ✓ |
 | Basic `--ci` gating | ✓ | ✓ |
-| `--fix` codemods (auto-trim & rewrite) | | ✓ |
+| `--fix` codemods (auto-trim & rewrite) (roadmap) | | ✓ |
 | Custom rules + per-rule severity | | ✓ |
 | `--baseline` drift tracking | | ✓ |
 | SARIF reporter | | ✓ |
