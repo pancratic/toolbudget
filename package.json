@@ -1,6 +1,6 @@
 {
   "name": "toolbudget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Know what your MCP server's tool surface costs an agent — in tokens and tool-selection accuracy.",
   "license": "MIT",
   "type": "module",
